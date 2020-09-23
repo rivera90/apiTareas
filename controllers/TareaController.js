@@ -49,7 +49,7 @@ function ObtenerTareas(req,res){
                 message:''
             })
         }else{
-            return res.status(404).send({
+            return res.status(200).send({
                 status:true,
                 result:'',
                 message:'No hay tareas registradas.'
@@ -71,7 +71,7 @@ function TareasFinalizadas(req,res){
                 message:''
             })
         }else{
-            return res.status(404).send({
+            return res.status(200).send({
                 status:true,
                 result:'',
                 message:'No hay tareas registradas.'
@@ -101,7 +101,7 @@ function ActualizarTarea(req,res){
                 message:mensaje
             })
         }else{
-            return res.status(404).send({
+            return res.status(200).send({
                 status:true,
                 result: '',
                 message: 'La tarea no existe.'
@@ -124,7 +124,7 @@ function EliminarTArea(req,res){
                 message:''
             })
         }else{
-            return res.status(404).send({
+            return res.status(200).send({
                 status: true,
                 result: '',
                 message:'La tarea no existe'
